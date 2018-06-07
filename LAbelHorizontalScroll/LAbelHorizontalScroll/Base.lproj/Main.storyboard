@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LAbelHorizontalScroll" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GbX-D0-8ea">
+                                <rect key="frame" x="67" y="73" width="240" height="128"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFX-Dh-0d8">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcv-Us-Idl">
+                                                <rect key="frame" x="0.0" y="0.0" width="4427" height="20.5"/>
+                                                <color key="backgroundColor" red="0.8980392157" green="0.81568627449999997" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Gcv-Us-Idl" firstAttribute="top" secondItem="VFX-Dh-0d8" secondAttribute="top" id="UO0-Ax-0wf"/>
+                                            <constraint firstItem="Gcv-Us-Idl" firstAttribute="leading" secondItem="VFX-Dh-0d8" secondAttribute="leading" id="jJP-ZD-xmd"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gcv-Us-Idl" secondAttribute="trailing" id="jg9-Yt-4C4"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gcv-Us-Idl" secondAttribute="bottom" id="vLl-Mp-hVB"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VFX-Dh-0d8" firstAttribute="leading" secondItem="GbX-D0-8ea" secondAttribute="leading" id="2O3-Hv-3Dz"/>
+                                    <constraint firstItem="VFX-Dh-0d8" firstAttribute="top" secondItem="GbX-D0-8ea" secondAttribute="top" id="iWA-m8-xSN"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="n2D-6A-HNa"/>
+                                    <constraint firstAttribute="trailing" secondItem="VFX-Dh-0d8" secondAttribute="trailing" id="rtI-4g-zOj"/>
+                                    <constraint firstAttribute="bottom" secondItem="VFX-Dh-0d8" secondAttribute="bottom" id="vq6-2A-MX8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GbX-D0-8ea" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="26C-R5-ZBz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GbX-D0-8ea" secondAttribute="bottom" constant="466" id="8iF-GC-BT4"/>
+                            <constraint firstItem="GbX-D0-8ea" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O3U-CY-852"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GbX-D0-8ea" secondAttribute="trailing" constant="52" id="WR8-0e-Twx"/>
+                            <constraint firstItem="GbX-D0-8ea" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="53" id="g9n-Fp-K41"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
