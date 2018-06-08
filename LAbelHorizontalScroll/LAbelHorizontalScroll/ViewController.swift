@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  LAbelHorizontalScroll
 //
-//  Created by Dheeraj Gupta on 6/7/18.
+//  Created by Pramod More on 6/7/18.
 //  Copyright © 2018 Biz4solutions. All rights reserved.
 //
 
